@@ -2,7 +2,12 @@ const qiniu = require("qiniu")
 const path = require('path')
 const fileTree = require('file-tree-simple')
 
-function upload(pathName, config, upload) {
+/**
+ * 上传指定目录中所有文件到七牛云
+ * @param {String} pathName 目录路径
+ * @param {Object} config 配置信息
+ */
+function upload(pathName, config) {
   const { accessKey, secretKey, bucket, zone, prefix } = config;
   let mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
   let options = {
