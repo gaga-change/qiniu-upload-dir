@@ -1,0 +1,30 @@
+{
+  "name": "qiniu-upload-dir",
+  "version": "0.0.1",
+  "description": "上传指定目录中所有文件到七牛云",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaga-change/qiniu-upload-dir.git"
+  },
+  "keywords": [
+    "qiniu",
+    "upload"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "author": "严俊东",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaga-change/qiniu-upload-dir/issues"
+  },
+  "homepage": "https://github.com/gaga-change/qiniu-upload-dir#readme",
+  "dependencies": {
+    "file-tree-simple": "0.0.2",
+    "qiniu": "^7.2.2"
+  }
+}
